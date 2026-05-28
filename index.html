@@ -3064,9 +3064,9 @@ if(org.ideas){
   }
 
   document.addEventListener('keydown', e => {
-    const overlayOpen = document.getElementById('modalBg')?.classList.contains('open') ||
-      document.getElementById('compareBg')?.classList.contains('open') ||
-      document.getElementById('anBg')?.classList.contains('open');
+    const overlayOpen = document.getElementById('orgModal')?.classList.contains('open') ||
+      document.getElementById('compareModal')?.classList.contains('open') ||
+      document.getElementById('helpModal')?.classList.contains('open');
     if (overlayOpen) return;
 
     const tag = document.activeElement?.tagName;

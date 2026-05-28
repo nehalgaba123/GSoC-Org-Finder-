@@ -898,17 +898,17 @@ document.addEventListener('keydown', (e) => {
 
   // ESC closes modals
   if (e.key === 'Escape') {
-    if (document.getElementById('modalBg')?.classList.contains('open')) {
+    if (document.getElementById('orgModal')?.classList.contains('open')) {
       closeModal();
       return;
     }
 
-    if (document.getElementById('compareBg')?.classList.contains('open')) {
+    if (document.getElementById('compareModal')?.classList.contains('open')) {
       closeCompare();
       return;
     }
 
-    if (document.getElementById('anBg')?.classList.contains('open')) {
+    if (document.getElementById('helpModal')?.classList.contains('open')) {
       closeAn();
       return;
     }
